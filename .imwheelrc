@@ -1,0 +1,5 @@
+".*"
+None, Thumb1, Control_L|V
+None, Thumb2, Control_L|C
+None, Up, Button4, 3.5
+None, Down, Button5, 3.5
