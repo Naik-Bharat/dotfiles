@@ -14,12 +14,12 @@ font:
   size: 8
 
 shell:
-  program: /bin/bash
+  program: /bin/zsh
   
-
 
 key_bindings:
   - { key: Return, mods: Control|Shift, action: SpawnNewInstance}
 
 window:
-  opacity: 0.9
+  opacity: 0.85
+  startup_mode: Maximized
