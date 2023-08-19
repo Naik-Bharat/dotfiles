@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# The location of the cache for your aur helper
+HOME=/home/bharat
+YAY_CACHE_DIR=$HOME/.cache/yay
+PARU_CACHE_DIR=$HOME/.cache/paru
+
+# Remove everything for AUR packages
+echo Removing AUR cache directories
+rm -rf $YAY_CACHE_DIR
+rm -rf $PARU_CACHE_DIR
+
+# Keep latest version for uninstalled native packages, keep two latest versions for installed packages
+echo Removing pacman cache directories
+/usr/bin/paccache -qruk0
+/usr/bin/paccache -qrk2
+

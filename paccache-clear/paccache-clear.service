@@ -1,0 +1,7 @@
+[Unit]
+Description=Clears the src/ cache for pacman and AUR packages
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/paccache-clear
+User=root
